@@ -1,5 +1,9 @@
-# npm install & npm run dev
+### Feel Free to contribute on this project
 
-# create .env file
+npm install & npm run dev
 
-# ADD DB_URI JWT_SECRET JWT_EXPIRE COOKIE_EXPIRE
+create .env file
+
+ADD DB_URI JWT_SECRET JWT_EXPIRE COOKIE_EXPIRE
+
+###### Checkout The Code
