@@ -5,15 +5,15 @@
 #### Technologies & Packages
 
 - **Backend & Database**
-  1. MongoDB
-  2. Express
-  3. Nodemon
-  4. JsonWebToken
-  5. bcryptjs
-  6. cookie-parser
-  7. monogoose
-  8. cors
-  9. dotenv
+  - MongoDB
+  - Express
+  - Nodemon
+  - JsonWebToken
+  - bcryptjs
+  - cookie-parser
+  - monogoose
+  - cors
+  - dotenv
 
 ```javascript
 npm install & npm run dev
