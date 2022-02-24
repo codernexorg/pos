@@ -1,3 +1,5 @@
+### Feel Free to contribute on this project
+
 # npm install & npm run dev
 
 # create .env file
