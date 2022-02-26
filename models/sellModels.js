@@ -10,6 +10,10 @@ const sellSchema = new mongoose.Schema({
     required: true,
   },
   productPrice: {
+    type: [Number],
+    required: true,
+  },
+  totalPrice: {
     type: Number,
     required: true,
   },
@@ -17,10 +21,10 @@ const sellSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  paid: String,
-  due: String,
-  discount: String,
-  tax: String,
+  paid: Number,
+  due: Number,
+  discount: Number,
+  tax: Number,
   shippingCharge: String,
   createdAt: {
     type: String,

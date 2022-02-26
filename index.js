@@ -12,6 +12,11 @@ import categoryRoutes from "./routes/categoryRoutes.js";
 import purchaseRoutes from "./routes/purchaseRoutes.js";
 import supplierRoutes from "./routes/supplierRoutes.js";
 import sellRoutes from "./routes/sellRoutes.js";
+import accountRoutes from "./routes/accountRoutes.js";
+import expenseRoutes from "./routes/expenseRoutes.js";
+import reportRoutes from "./routes/reportRoutes.js";
+import dueRoutes from "./routes/dueRoutes.js";
+import customerRoutes from "./routes/customerRoutes.js";
 /**
  * Import Middleware
  */
@@ -45,6 +50,11 @@ app.use("/api/v1/category", isAuthenticatedUser, categoryRoutes);
 app.use("/api/v1/purchase", isAuthenticatedUser, purchaseRoutes);
 app.use("/api/v1/supplier", isAuthenticatedUser, supplierRoutes);
 app.use("/api/v1/sell", isAuthenticatedUser, sellRoutes);
+app.use("/api/v1/accounts", isAuthenticatedUser, accountRoutes);
+app.use("/api/v1/expense", isAuthenticatedUser, expenseRoutes);
+app.use("/api/v1/report", isAuthenticatedUser, reportRoutes);
+app.use("/api/v1/due", isAuthenticatedUser, dueRoutes);
+app.use("/api/v1/customer", isAuthenticatedUser, customerRoutes);
 
 /**
  * Listening Server & DB Connection
