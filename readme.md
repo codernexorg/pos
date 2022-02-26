@@ -4,7 +4,7 @@
 
 #### Technologies & Packages
 
-- **Backend & Database**
+- **Server & Database**
   - MongoDB
   - Express
   - Nodemon
@@ -14,6 +14,15 @@
   - monogoose
   - cors
   - dotenv
+- **Frontend**
+  - (React)[https://reactjs.org/]
+  - (Redux)[https://redux.js.org/]
+  - (React Redux)[https://redux.js.org/]
+  - (Reux Thunk)[https://redux.js.org/]
+  - (SASS)
+  - (Axios)
+  - (React Router DOM)
+  - (Material UI)
 
 ```javascript
 npm install & npm run dev
