@@ -1,13 +1,16 @@
 import Purchase from "../models/purchaseModels.js";
 import Product from "../models/productModels.js";
+import errorHandler from "../utils/errorHandler.js";
 
 export const addPurchase = async (req, res) => {
-  const { name } = req.body;
+  const { name, qty } = req.body;
+  console.log(qty);
 
   let product = await Product.findOne({ name });
-  product.qty = req.body.qty;
-  await product.save();
 
+  if (!product) return errorHandler("No Product Maybe Add some", 400, res);
+  product.qty += qty;
+  await product.save();
   let purchase = await Purchase.create(req.body);
 
   res.status(200).json({ success: true, purchase });
