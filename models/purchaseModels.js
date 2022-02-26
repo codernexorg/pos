@@ -22,10 +22,10 @@ const purchaseSchema = new mongoose.Schema({
     required: true,
   },
   paid: {
-    type: String,
+    type: Number,
   },
   due: {
-    type: String,
+    type: Number,
   },
   createdAt: {
     type: String,
