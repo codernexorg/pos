@@ -1,6 +1,6 @@
 ## POS (Poin Of Sale)
 
-<div style="display:flex;column-gap:20px;justify-content:center;align-items:center">
+<div style="display:flex;column-gap:20px;justify-content:center;align-items:center;width:100%;margin:0 auto">
 <img src="https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress" width="100px">
 <img src="https://nodejs.org/static/images/logo.svg" width="100px">
 <img src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" width="100px">
