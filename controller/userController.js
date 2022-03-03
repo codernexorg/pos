@@ -33,7 +33,7 @@ export const loginUser = async (req, res, next) => {
     return errorHandler("Invalid Email or Password", 401, res);
   }
 
-  sendToken(user, res, 200);
+  sendToken(user, res, 202);
 };
 
 //Get User Pofile
@@ -43,4 +43,17 @@ export const getUser = async (req, res) => {
   console.log(user);
 
   res.status(200).json({ success: true, user });
+};
+
+//Logout USer
+
+export const logOut = (req, res) => {
+  res
+    .status(202)
+    .cookie("token", null, {
+      expires: new Date(Date.now()),
+      httpOnly: true,
+      sameSites: true,
+    })
+    .json({ success: true, message: "Logout Successfully" });
 };

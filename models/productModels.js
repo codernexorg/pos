@@ -28,11 +28,14 @@ const productSchema = new mongoose.Schema({
   },
   barcode: {
     type: String,
-    unique: true,
   },
   unit: {
     type: String,
     required: true,
+  },
+  purchasePrice: {
+    type: Number,
+    default: 0,
   },
   price: {
     type: Number,
