@@ -10,7 +10,7 @@ export const addPurchase = async (req, res) => {
 
   if (!product) return errorHandler("No Product Maybe Add some", 400, res);
   product.qty += qty;
-  product.purchasePrice += purchasePrice;
+  product.purchasePrice = purchasePrice;
   await product.save();
   let purchase = await Purchase.create(req.body);
 
